@@ -12,7 +12,7 @@ Here are my solutions to the **Advent of Code** problems.
 
 There is one folder per year. Each folder contains at least two files per day: one with code and one with an input (.txt file).
 
-- [2022](adventofcode/tree/master/2022)
+- [2022](/2022)
 
 # Credit
 
