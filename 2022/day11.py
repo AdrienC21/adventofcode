@@ -215,7 +215,7 @@ Figure out which monkeys to chase by counting how many items they inspect over 2
 """
 
 
-with open("day11.txt", "r") as f:
+with open("2022/day11.txt", "r") as f:
     input = f.read()
 
 

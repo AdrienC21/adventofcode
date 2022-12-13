@@ -54,7 +54,7 @@ After the rearrangement procedure completes, what crate ends up on top of each s
 """
 
 
-with open("day5.txt", "r") as f:
+with open("2022/day5.txt", "r") as f:
     input = f.read()
     init, input = input.split("\n\n")
     init = "\n".join(init.split("\n")[:-1])

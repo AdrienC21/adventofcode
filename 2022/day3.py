@@ -34,7 +34,7 @@ Find the item type that appears in both compartments of each rucksack. What is t
 """
 
 
-with open("day3.txt", "r") as f:
+with open("2022/day3.txt", "r") as f:
     input = f.read()
 
 

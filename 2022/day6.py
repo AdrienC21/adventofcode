@@ -33,7 +33,7 @@ How many characters need to be processed before the first start-of-packet marker
 """
 
 
-with open("day6.txt", "r") as f:
+with open("2022/day6.txt", "r") as f:
     input = f.read()
 
 

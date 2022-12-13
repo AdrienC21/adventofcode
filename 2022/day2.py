@@ -30,7 +30,7 @@ What would your total score be if everything goes exactly according to your stra
 """
 
 
-with open("day2.txt", "r") as f:
+with open("2022/day2.txt", "r") as f:
     input = f.read()
 
 

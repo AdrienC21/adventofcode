@@ -32,7 +32,7 @@ What is the fewest steps required to move from your current position to the loca
 """
 
 
-with open("day12.txt", "r") as f:
+with open("2022/day12.txt", "r") as f:
     input = f.read()
 
 

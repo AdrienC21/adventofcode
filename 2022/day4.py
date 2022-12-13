@@ -44,7 +44,7 @@ In how many assignment pairs does one range fully contain the other?
 """
 
 
-with open("day4.txt", "r") as f:
+with open("2022/day4.txt", "r") as f:
     input = f.read()
 
 

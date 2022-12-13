@@ -35,7 +35,7 @@ Find the Elf carrying the most Calories. How many total Calories is that Elf car
 """
 
 
-with open("day1.txt", "r") as f:
+with open("2022/day1.txt", "r") as f:
     input = f.read()
 
 

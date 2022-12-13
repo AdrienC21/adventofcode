@@ -192,7 +192,7 @@ Find the signal strength during the 20th, 60th, 100th, 140th, 180th, and 220th c
 """
 
 
-with open("day10.txt", "r") as f:
+with open("2022/day10.txt", "r") as f:
     input = f.read()
 
 

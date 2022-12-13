@@ -111,8 +111,7 @@ What are the indices of the pairs that are already in the right order? (The firs
 Determine which pairs of packets are already in the right order. What is the sum of the indices of those pairs?
 """
 
-
-with open("day13.txt", "r") as f:
+with open("2022/day13.txt", "r") as f:
     input = f.read()
 
 
@@ -190,13 +189,32 @@ Organize all of the packets into the correct order. What is the decoder key for 
 """
 
 
+from functools import cmp_to_key
+
+
+def custom_comp(a: list, b: list) -> bool:
+    order = right_order(a, b)
+    if order is None:
+        return 1
+    return -1 if order else 1
+
+
 def decoder_key(input: str) -> int:
-    sum_indexes = 0
-    for i, packets in enumerate(input.split("\n\n")):
+    packets_list = []
+    for packets in input.split("\n\n"):
         p1, p2 = packets.split("\n")
-        if right_order(ast.literal_eval(p1), ast.literal_eval(p2)):
-            sum_indexes += (i + 1)
-    return sum_indexes
+        packets_list.append(ast.literal_eval(p1))
+        packets_list.append(ast.literal_eval(p2))
+    packets_list.append([[2]])
+    packets_list.append([[6]])
+    packets_list.sort(key=cmp_to_key(custom_comp))
+    index1, index2 = None, None
+    for i, p in enumerate(packets_list):
+        if p == [[2]]:
+            index1 = i + 1
+        elif p == [[6]]:
+            index2 = i + 1
+    return index1 * index2
 
 
 print(f"Result:\n{decoder_key(input)}")

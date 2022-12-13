@@ -35,7 +35,7 @@ Consider your map; how many trees are visible from outside the grid?
 import numpy as np
 
 
-with open("day8.txt", "r") as f:
+with open("2022/day8.txt", "r") as f:
     input = f.read()
 
 

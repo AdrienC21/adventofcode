@@ -244,7 +244,7 @@ Simulate your complete hypothetical series of motions. How many positions does t
 """
 
 
-with open("day9.txt", "r") as f:
+with open("2022/day9.txt", "r") as f:
     input = f.read()
 
 
